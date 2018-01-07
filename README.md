@@ -9,7 +9,8 @@ Python3
 
 Dependencies: WordCloud, matplotlib
 
-To run program type: python3 commentcloud.py <subreddit name> <index>
+To run program type: python3 commentcloud.py 'subreddit_name' 'index'
+
 'index is an optional parameter denoting what parameter of the comment data will be modeled. 
 index=0 will model the sheer frequency of the words in the comments.
 index=1 will model the total score (upvotes/downvotes) of the words in the comments
