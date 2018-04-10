@@ -7,8 +7,7 @@ import sys
 
 #Reddit comment collector
 #Collects comments, their score, and submission title from specified subreddit
-reddit = praw.Reddit(client_id='DnnWmDl5CgsEiw', client_secret="ahMb2GnlyjkVzoS8hrAkGwFtRBg",
-                     user_agent='commentScraper', password='@wettfd44!', username="I_Enjoy_Data")
+reddit = praw.Reddit(client_id="dZsi4V3pYz5jVw", client_secret=None, user_agent="comment scraper")
 
 
 if not os.path.exists('commentdata'):
