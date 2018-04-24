@@ -1,24 +1,15 @@
 # RedditCommentAnalysis
-Displays word clouds of currently hot submissions' comment replies on reddit using user specified subreddit and post title from a displayed list. Testing.
 
-(This is intended to be a small testing application of a larger reddit comment analysis program. This application is not yet complete.)
+Dependencies: python3, praw (python reddit api wrapper), matplotlib, nltk
 
-Python3
+Displays a changing chart showing the frequency of words for a specified set of subreddits.
 
+'subreddits.txt' should contain a space-seperated list of subreddits for the script to consider. 
 
+To run, 'python3 wordChartAnimation.py' <numComments> <commentBufferSize>
 
-Dependencies: WordCloud, matplotlib
+Optional arguments: 
+	numComments=the total number of comments to consider in a single chart.  Default=1000
+	commentBufferSize=the number of comments to alternate for one animation pass
 
-To run program type: python3 commentcloud.py 'subreddit_name' 'index'
-
-'index is an optional parameter denoting what parameter of the comment data will be modeled. 
-index=0 will model the sheer frequency of the words in the comments.
-index=1 will model the total score (upvotes/downvotes) of the words in the comments
-index defaults to 1 to model popularity
-
-A list of submission titles will then be displayed and the user then specifies a submission to model with the given index displayed next to the submission title.
-A word cloud will then be displayed.
-
-It takes a substantial amount of time to collect comments on large submissions.
-
-Have fun.
+To exit, close the matplotlib animation.
